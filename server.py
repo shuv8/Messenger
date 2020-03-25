@@ -20,6 +20,8 @@ def status():
     return {
         'status': True,
         'name': "WriteMe",
+        'users': len(_users),
+        'messages': len(_messages),
         'time': datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S')
     }
 
